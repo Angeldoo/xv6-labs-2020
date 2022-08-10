@@ -1,0 +1,37 @@
+
+xv6 kernel is booting
+
+hart 1 starting
+hart 2 starting
+init: starting sh
+$ usertests
+usertests starting
+test manywrites: OK
+test execout: OK
+test copyin: OK
+test copyout: OK
+test copyinstr1: OK
+test copyinstr2: OK
+test copyinstr3: OK
+test rwsbrk: OK
+test truncate1: OK
+test truncate2: OK
+test truncate3: OK
+test reparent2: OK
+test pgbug: OK
+test sbrkbugs: usertrap(): unexpected scause 0x000000000000000c pid=3240
+            sepc=0x000000000000569a stval=0x000000000000569a
+usertrap(): unexpected scause 0x000000000000000c pid=3241
+            sepc=0x000000000000569a stval=0x000000000000569a
+OK
+test badarg: OK
+test reparent: OK
+test twochildren: OK
+test forkfork: OK
+test forkforkfork: OK
+test argptest: OK
+test createdelete: OK
+test linkunlink: OK
+test linktest: OK
+test unlinkread: OK
+teqemu-system-riscv64: terminating on signal 15 from pid 91163 (make)
